@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=PT+Sans:ital@1&family=Roboto:ital,wght@1,100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+ 
+  height: 100vh;
+   /* display: flex;
+  align-items: center;
+  justify-content: center;  */
+  background: linear-gradient(#22c1c3,#2fc1ba,#fdbb2d);
+}
+ .container {
+  font-size: 16px;
+   width: 90vw;
+   max-width: 37.5em;
+  padding: 3em 1.8em;
+  background-color: #1e293b;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+
+  border-radius: 0.6em;
+  box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+margin-top: 18px;
+  
+}
+
+.input-info{
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.2em;
+}
+.input-info input, .input-info button{
+  font-size: 0.9em;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+.input-info input{
+  background-color: transparent; 
+   border: 1px solid #a0a0a0; 
+  color: #2d2c2c;
+  padding: 0.8em;
+}
+
+.input-info input:focus{
+  background-color:#eedcdc;
+}
+
+.input-info button{
+  background-color: #84c3f3;
+    border: none;
+    cursor: pointer;
+}
+
+.info{
+  position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+     margin-top: 1.2em; 
+  
+}
+
+h2{
+  text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+.rating{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    margin: 0.6em 0 0.9em 0;
+}
+.rating img{
+  width: 1.2em;
+}
+.rating h4{
+ 
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 500;
+  color:#fff;
+}
+.ditails{
+  display: flex;
+  /* font-size: 0.95em; */
+  font-size: 17px;
+  gap: 1em;
+  justify-content: center;
+  color: #fff;
+  /* margin: 0.1em 0; */
+  font-weight: 300;
+}
+.genre{
+  display: flex;
+  justify-content: space-around;
+}
+h3{
+  font-weight: 500;
+  margin-top: 1.2em;
+  color:#fff;
+
+}
+h2{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color:#fff;
+}
+
+p{
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-align: justify;
+  color: #fff;
+}
+
+.message{
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+      font-size: 14px;
+  }
+  .poster{
+      margin: auto;
+      width: auto;
+      max-height: 10.8em;
+  }
+
+  .info{
+      grid-template-columns: 1fr;
+  }
+
+}
+
+.poster{
+  width: 100%;
+}
+.close{
+  background-color: #84c3f3;
+  width: 90px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+  font-size: 17px;
+}
+
+.close:hover{
+  background-color: #b7dbf6;
+}
