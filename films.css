@@ -13,7 +13,9 @@ body {
    /* display: flex;
   align-items: center;
   justify-content: center;  */
-  background: linear-gradient(#22c1c3,#2fc1ba,#fdbb2d);
+   background-image: url(cinema-978x512.jpg);
+
+  background-size:cover;
 }
  .container {
   font-size: 16px;
