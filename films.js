@@ -4,7 +4,7 @@ const input = document.querySelector(".input-info input"),
 
 button.addEventListener("click", (e) => {
   let inpVal = input.value;
-  let URL = `http://www.omdbapi.com/?t=${inpVal}&apikey=${apiKey}`;
+  let URL = `https://www.omdbapi.com/?t=${inpVal}&apikey=${apiKey}`;
 
   if (inpVal.length <= 0) {
     result.innerHTML = `<h3 class="msg">Please enter a movie name </h3>`;
